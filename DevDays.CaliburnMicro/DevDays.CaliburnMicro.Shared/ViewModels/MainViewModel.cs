@@ -4,7 +4,17 @@ namespace DevDays.CaliburnMicro.ViewModels
 {
     public class MainViewModel : Screen
     {
-        private string _name;
+	    protected override void OnActivate()
+	    {
+		    base.OnActivate();
+	    }
+
+	    protected override void OnInitialize()
+	    {
+		    base.OnInitialize();
+	    }
+
+	    private string _name;
 
         public string Name
         {
